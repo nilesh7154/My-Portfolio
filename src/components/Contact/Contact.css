@@ -1,0 +1,26 @@
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    background-color: #282c34; 
+    
+}
+
+.contact-heading {
+    padding-top: 150px;
+    text-align: center;
+    color:white;
+    font-size: 2.5rem; 
+}
+
+.contact-details {
+    font-size: 1.2rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    line-height: 1.6;
+    margin: 50px; 
+    
+}
+
+.contact-details p {
+    margin: 10px 0; 
+    color: white;
+}

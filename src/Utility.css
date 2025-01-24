@@ -1,0 +1,19 @@
+
+.heading{
+    text-align: center;
+}
+/* Add this to your global CSS file (e.g., App.css) */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
