@@ -9,17 +9,11 @@ function About() {
           <h1 className="heading">About Me</h1>
           <div className="about-details">
             <div className="about-text">
-              <h2>Hello, I'm <span className="name">Nilesh Rathod</span></h2>
-              <h3>I'M A WEB DESIGNER</h3>
-              <p>
-                I specialize in creating responsive designs, UX/UI interfaces, and interactive websites. 
-                With a passion for crafting visually appealing and functional web experiences, 
-                I aim to bring ideas to life through innovative design solutions.
-              </p>
-              <p>
-                My expertise includes modern tools like React, JavaScript, and CSS frameworks. 
-                I thrive on solving problems and delivering user-friendly applications.
-              </p>
+              <h2>Hi,Myself <span className="name">Nilesh Rathod</span></h2>
+              <h3> And I'am a <span>WEB DESIGNER</span></h3>
+             <p> I'm a frontend Developer with a pasion for creating interactive And user-friendly web-application</p>
+             <a href="Images/JS.png" className="btn">Resume</a>
+             <a href="#Contact" className="btn">Contact me</a>
             </div>
             <div className="about-image">
               <img src="./Images/nil.jpg" alt="Nilesh Rathod" />

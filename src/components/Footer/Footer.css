@@ -1,33 +1,63 @@
+/* Footer Styles */
 .footer {
-    background-color: #333; 
-    color: white; 
-    
-    text-align: center; 
+    background-color: #333; /* Dark background */
+    color: white;
+    text-align: center;
     position: sticky;
     bottom: 0;
-    height: 100px;
+    height: 100px; /* Set the height of the footer */
+    padding: 10px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
 }
 
+/* Footer Hover Effect */
+.footer:hover {
+    background-color: #444; /* Darken footer color when hovering */
+    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+/* Footer Content */
 .footer-content {
-    max-width: 800px; 
-     margin: 0 auto; 
-     padding-top:3px;
+   width: 100%; /* Limit the width */
+    margin: 0 auto; /* Center content */
+    padding-top: 10px;
 }
 
+/* Social Links Section */
 .social-links {
-    margin-top: 1px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
+/* Social Icons */
 .social-icon {
-    color: white;
-    margin: 0 10px; 
-    font-size: 24px; 
-    transition: color 0.3s ease; 
-   
-
+    color: white; /* Default icon color */
+    margin: 0 15px;
+    font-size: 28px; /* Slightly larger icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition effect for hover */
+    cursor: pointer;
 }
 
+/* Hover Effect on Social Icons */
 .social-icon:hover {
-    color: #007bff; 
+    color: #007bff; /* Change icon color to blue when hovered */
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjust footer height for mobile */
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        padding-top: 20px;
+    }
+
+    .social-icon {
+        font-size: 24px; /* Slightly smaller icons for mobile */
+        margin: 0 8px; /* Reduce space between icons on mobile */
+    }
 }

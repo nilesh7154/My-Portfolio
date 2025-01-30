@@ -1,53 +1,101 @@
 
+/* Navbar Styles */
 .navbar {
     width: 100%; 
-    height: 100px;
-    background-color: #444; 
+    height: 80px; /* Reduced height for a sleek look */
+    background-color: #2c3e50; /* Darker shade for a more modern look */
     display: flex;
     justify-content: space-between;
     align-items: center; 
     position: sticky; 
     top: 0; 
-    
-    border-bottom: 2px solid black; 
-    z-index: 1; 
-    
-    
-
+    border-bottom: 3px solid #ff6347; /* Adding an accent color to the bottom border */
+    z-index: 1000; /* Ensures the navbar stays on top */
+    padding: 0 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
 }
 
+/* Navbar Hover Effect */
+.navbar:hover {
+    background-color: #34495e; /* Darker color when hovering */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
 
+/* Logo Styles */
 .logo {
-    color: azure; 
+    font-size: 2rem; /* Larger font size for logo */
+    color: #f1c40f; /* Bright yellow for the logo */
+    font-family: 'Roboto', sans-serif; /* Modern font for the logo */
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
+.logo:hover {
+    color: #ff6347; /* Accent color for hover effect */
+}
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     list-style: none; 
-    padding-right: 100px;
+    padding-right: 20px;
 }
 
 .nav-links li {
-    margin: 0 15px; 
+    margin: 0 20px; /* Increased margin for better spacing */
 }
 
 .nav-links a {
-    text-decoration: none; 
-    color: azure; 
-    font-size: large; 
-    transition: color 0.3s ease, transform 0.3s ease; 
+    text-decoration: none;
+    color: #ecf0f1; /* Light gray for the links */
+    font-size: 1.2rem; /* Larger font for better readability */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease; /* Adding transition for hover */
 }
-
 
 .nav-links a:hover {
-    color: #ff6347; 
-    transform: scale(1.1); 
+    color: #ff6347; /* Tomato color on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
+/* Add active link effect */
+.nav-links a.active {
+    color: #f1c40f; /* Bright yellow for active link */
+    font-weight: bold;
+}
 
+/* Head (Optional Header in Navbar) */
 .head {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 24px; 
-    padding-left: 100px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    color: #ecf0f1; /* Light gray text */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically on mobile */
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.8rem; /* Smaller logo on mobile */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Align links vertically */
+        align-items: center; /* Center links on mobile */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Increase spacing between links */
+    }
+
+    .nav-links a {
+        font-size: 1.5rem; /* Larger text on mobile */
+    }
 }

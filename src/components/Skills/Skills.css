@@ -1,34 +1,140 @@
-.skillContainer{
+/* Skill Container */
+.skillContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 100%;
     height: 100vh;
-    border: 2px solid black;
-    background-color:#282c34;
+    background-color: #282c34;
+    padding: 20px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-.skill{
+/* Heading Style */
+.heading1 {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Skill Box Container */
+.skill {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px; /* Space between skill boxes */
+    padding: 20px;
+    animation: slideUp 0.8s ease-out;
 }
 
-.skill_box{
+/* Slide-up Animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Individual Skill Box */
+.skill_box {
     height: 250px;
     width: 200px;
-    background-color: aqua;
+    background-color: #00bcd4; /* Aqua color */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
-.heading1{
-    color: white;
-    font-size: 2.5rem;
-    padding-top: 170px;
-    text-align: center;
+/* Skill Box Hover Effect */
+.skill_box:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    background-color: #007c8c; /* Darker shade on hover */
+}
+
+/* Skill Box Text */
+.skill_box h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+/* Skill Box Description */
+.skill_box p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .heading1 {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .skill {
+        flex-direction: column; /* Stack skill boxes vertically */
+        align-items: center;
+    }
+
+    .skill_box {
+        width: 80%; /* Make skill boxes take up more space */
+        max-width: 300px; /* Limit max width */
+        margin-bottom: 15px;
+        padding: 15px; /* Adjust padding */
+    }
+
+    .skill_box h3 {
+        font-size: 1.5rem; /* Slightly smaller font size for mobile */
+    }
+
+    .skill_box p {
+        font-size: 0.9rem; /* Smaller description for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading1 {
+        font-size: 1.5rem; /* Smaller font for very small screens */
+    }
+
+    .skill_box {
+        width: 90%; /* Even smaller width on very small screens */
+        margin-bottom: 10px;
+    }
+
+    .skill_box h3 {
+        font-size: 1.3rem;
+    }
+
+    .skill_box p {
+        font-size: 0.8rem;
+    }
 }
