@@ -13,7 +13,7 @@ function Education() {
         {
             degree: "Higher Secondary Certificate (HSC)",
             institution: "AGRG JR. College Shendurni ",
-            year: "2020 - 2022",
+            year: "2021 - 2022",
             description: "Completed studies in the Science stream with a focus on Physics, Chemistry, and Mathematics."
         },
     ];

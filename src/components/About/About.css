@@ -1,21 +1,21 @@
 /* General Section Style */
 .about-section {
   width: 100%;
-  height: 100vh;
-  background-color: #282c34;
-  color: white;
-  font-family: 'Open Sans', sans-serif; /* Default font for text */
+  /* height: 100vh; */
+  background-color: #ffffff; /* White background for section */
+  color: #333; /* Dark color for text for better readability */
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+  transition: transform 0.3s ease-in-out;
   padding: 0 20px; /* Added padding to avoid content touching edges */
 }
 
 /* About Container Style */
 .about-container {
   max-width: 1200px;
-  padding: 20px;
+  padding: 40px;
   opacity: 1;
   transform: translateY(0); /* Initial position */
   transition: transform 0.5s ease, opacity 0.5s ease; /* Transition for smooth motion */
@@ -25,11 +25,11 @@
 /* Heading Style */
 .heading {
   text-align: center;
-  font-size: 3rem; /* Larger font size for heading */
+  font-size: 3rem;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif; /* Main heading font */
   color: #ff6347; /* Tomato color for emphasis */
-  transition: transform 0.3s ease; /* Smooth heading movement */
+  transition: transform 0.3s ease;
 }
 
 /* About Details Section */
@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  transition: transform 0.5s ease; /* Transition effect for detail section */
+  transition: transform 0.5s ease;
   width: 100%;
 }
 
@@ -50,23 +50,23 @@
 }
 
 .about-text h2 {
-  font-size: 2.2rem; /* H2 slightly larger */
+  font-size: 2.2rem;
   font-weight: 600;
-  color: #fff;
+  color: #333; /* Dark text for H2 */
   margin-bottom: 15px;
   font-family: 'Roboto', sans-serif;
 }
 
 .about-text h3 {
-  font-size: 1.6rem; /* Slightly larger h3 */
+  font-size: 1.6rem;
   color: #ff6347; /* Tomato color for subheading */
   font-family: 'Roboto', sans-serif;
 }
 
 .about-text p {
-  font-size: 1.1rem; /* Increased font size for better readability */
+  font-size: 1.1rem;
   line-height: 1.7;
-  color: #d1d1d1; /* Lighter text color for paragraph */
+  color: #555; /* Lighter color for paragraph */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -77,7 +77,7 @@
   position: relative;
   overflow: hidden; /* Prevents overflow */
   display: flex;
-  justify-content: center; /* Centers the image */
+  justify-content: center;
   align-items: center;
 }
 
@@ -86,7 +86,7 @@
   max-width: 350px;
   border-radius: 50%;
   transition: transform 0.5s ease, filter 0.5s ease;
-  object-fit: cover; /* Ensures image scales properly within the container */
+  object-fit: cover;
 }
 
 .about-image img:hover {
@@ -123,6 +123,7 @@
 @media (max-width: 768px) {
   .about-section {
       flex-direction: column;
+      height: auto; /* Allow the section to grow based on content */
   }
 
   .about-container {
@@ -138,5 +139,33 @@
       margin-left: 0;
       max-width: 250px; /* Adjust image size for mobile */
       object-fit: contain; /* Ensures image fits well without distorting */
+  }
+
+  .heading {
+      font-size: 2rem;
+      padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 1.6rem; /* Smaller font for very small screens */
+  }
+
+  .about-text h2 {
+      font-size: 1.8rem; /* Slightly smaller heading */
+  }
+
+  .about-text h3 {
+      font-size: 1.4rem; /* Smaller subheading */
+  }
+
+  .about-text p {
+      font-size: 1rem; /* Smaller paragraph text */
+  }
+
+  .btn {
+      font-size: 1.4rem; /* Smaller button text on very small screens */
+      padding: 1rem 2rem;
   }
 }

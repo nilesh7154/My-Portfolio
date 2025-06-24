@@ -1,24 +1,23 @@
 /* General Education Section Style */
 .education-section {
     width: 100%;
-    /* height: 100vh; */
-    /* margin-top: 50px; */
-    background-color: #282c34; /* Dark background */
+    background-color:white; /* Dark, rich background color */
     padding: 0 20px; /* Padding to prevent content touching the edges */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease; /* Background color transition */
+    min-height: 100vh; /* Ensure section takes full viewport height */
 }
 
 /* Education Heading */
 .education-heading {
     text-align: center;
     padding-top: 50px;
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    color: black; /* Soft light color for the heading */
+    font-size: 2.8rem;
+    margin-bottom: 40px;
     font-family: 'Roboto', sans-serif; /* Clean, modern font */
     animation: fadeIn 1s ease-out; /* Fade-in animation for heading */
 }
@@ -45,12 +44,12 @@
 /* Education Item Style */
 .education-item {
     width: 100%;
-    max-width: 800px; /* Limit the width for large screens */
+    max-width: 900px; /* Limit the width for larger screens */
     margin-bottom: 30px;
     padding-left: 20px;
-    border-left: 5px solid #007bff;
-    background: rgba(0, 0, 0, 0.5); /* Slight transparent background for contrast */
-    border-radius: 8px; /* Rounded corners for a modern look */
+    border-left: 5px solid #00aaff; /* Light blue border for contrast */
+    background: rgba(0, 0, 0, 0.7); /* Slight transparent background for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
     padding: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -60,55 +59,60 @@
 /* Hover effect for Education Item */
 .education-item:hover {
     transform: translateX(10px); /* Slight translation effect on hover */
-    background-color: rgba(0, 123, 255, 0.8); /* Change background color on hover */
-    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4); /* Add hover shadow */
+    background-color: rgba(9,9, 9, 0.2); /* Lighter background color on hover */
+    box-shadow: 0 6px 12px rgba(0, 170, 255, 0.4); /* Soft blue shadow effect */
 }
 
 /* Degree Style */
 .degree {
-    font-size: 1.5rem;
-    color: #007bff;
+    font-size: 1.7rem;
+    color: #00aaff; /* Bright blue color for emphasis */
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Institution Name Style */
 .institution {
-    font-size: 1.2rem;
-    color: white;
+    font-size: 1.3rem;
+    color: #f4f4f9; /* Soft white for the institution name */
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 /* University Name Style */
 .university {
     font-size: 1.2rem;
-    color: white;
+    color: #aaa; /* Light grey for university name */
     font-style: italic;
+    margin-bottom: 5px;
 }
 
 /* Year Style */
 .year {
     font-style: italic;
-    color: #ccc; /* Light color for the year */
+    color: #bbb; /* Light color for the year */
     margin-top: 10px;
 }
 
 /* Description Style */
 .description {
-    font-size: 1rem;
-    color: white;
+    font-size: 1.1rem;
+    color: #f4f4f9; /* Soft light color for readability */
     margin-top: 10px;
     line-height: 1.6;
+    font-family: 'Arial', sans-serif;
 }
+
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
     .education-section {
         height: auto;
-        padding: 20px 0;
+        padding: 20px 10px; /* Adjust padding for smaller screens */
     }
 
     .education-heading {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding-top: 30px;
     }
 
@@ -119,7 +123,7 @@
     }
 
     .degree {
-        font-size: 1.3rem; /* Smaller degree font on mobile */
+        font-size: 1.5rem; /* Slightly smaller degree font on mobile */
     }
 
     .institution, .university, .year {
@@ -128,5 +132,28 @@
 
     .description {
         font-size: 0.9rem; /* Slightly smaller description font */
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .education-heading {
+        font-size: 1.8rem; /* Adjust for very small screens */
+    }
+
+    .education-item {
+        padding-left: 10px; /* Further reduce padding for mobile */
+    }
+
+    .degree {
+        font-size: 1.3rem; /* Adjust degree size */
+    }
+
+    .institution, .university {
+        font-size: 0.95rem; /* Adjust sizes for readability */
+    }
+
+    .description {
+        font-size: 0.85rem; /* Smaller description font */
     }
 }
