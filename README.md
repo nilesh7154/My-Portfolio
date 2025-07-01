@@ -30,8 +30,15 @@ cd My-Portfolio
 npm install
 npm start
 
+
+## 👨‍💻 Author
+
+**Nilesh Rathod**  
+Final Year B.E.Computer Science Engineering Student
+SJRIT Dondaicha Under KBCNMU,Jalgaon, Maharashtra, India   
+  
+GitHub: [@nilesh7154](https://github.com/nilesh7154)
 Email: rathodnilesh7154@gmail.com
 LinkedIn: www.linkedin.com/in/rathod-nilesh7154
-GitHub: github.com/nilesh7154
 
 
